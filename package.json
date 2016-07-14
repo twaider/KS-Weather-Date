@@ -1,0 +1,58 @@
+{
+    "author": "twaider",
+    "dependencies": {
+        "pebble-clay": "^1.0.1"
+    },
+    "keywords": [
+        "pebble-app"
+    ],
+    "name": "ks-weather-date",
+    "pebble": {
+        "capabilities": [
+            "location",
+            "configurable"
+        ],
+        "displayName": "KS Weather Date",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "TEMPERATURE",
+            "UNITS",
+            "ICON",
+            "BACKGROUND_COLOR",
+            "WEATHER_ON",
+            "BACKGROUND_ON",
+            "LOCATION",
+            "WEATHER_SAFEMODE"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "characterRegex": "[0-9:\u00b0a-izA-IZ\\-]",
+                    "file": "fonts/nupe.ttf",
+                    "name": "FONT_NUPE_23",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "images/ks_menu.png",
+                    "menuIcon": true,
+                    "name": "IMAGE_MENU",
+                    "targetPlatforms": null,
+                    "type": "png"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk"
+        ],
+        "uuid": "8e3e2b1f-0e3b-46da-a45e-0300a75d6c38",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
